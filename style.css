@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(lightpaperfibers.png); /* credit: toptal subtle patterns */
+  color: black;
+  text-align: center;
+}
+
+main {
+  background-color: #ddd;
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 700px;
+}
+
+h1 {
+  font-family: fredericka the great;
+  font-size: 4em;
+}
+
+#tools-container {
+  margin: auto;
+  padding: 1rem;
+}
+
+button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-family: poppins;
+  padding: 0.5rem;
+  width: 120px;
+}
+
+button:hover, #clear:hover {
+  background-color: black;
+  color: white;
+}
+
+#clear {
+  margin-top: 1rem;
+}
+
+#grid-container {
+  background-color: white;
+  border: 10px solid black;
+  display: grid;
+  height: 500px;
+  margin: auto;
+  width: 500px;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 75%;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  #grid-container {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  main {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 90%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  #tools-container {
+    width: 250px;
+  }
+  button {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+  }
+  #grid-container {
+    height: 250px;
+    width: 250px;
+  }
+}
